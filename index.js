@@ -27,11 +27,11 @@ function processFirstItem(stringList, callback) {
  * Study the code for counter1 and counter2. Answer the questions below.
  * 
  * 1. What is the difference between counter1 and counter2?
- * while counter1 can store numbers because it has a closure, counter2 doesn't return past 1 because it doesn't have a closure.
+ * there is a function nested inside of a function with counter1 while counter2 doesn't.
  * 2. Which of the two uses a closure? How can you tell?
- * 
+ * counter1, because the child level function scope can access the parent level function scope.
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
- * counter1 would be useful when you want to continuously track/count numbers. counter2 would be useful when you 
+ * counter1 would be useful when you want to continuously track/count numbers. counter2 would be useful when you want to add 1 to the argument.    
 */
 
 // counter1 code
