@@ -116,25 +116,12 @@ function scoreboard(inning, numberOfInnings) {
   let homeScore = 0;
   let awayScore = 0;
 
-  let theScore = {'1st inning': `${homeScore} - ${awayScore}`,
-  '2nd inning': `${homeScore} - ${awayScore}`,
-  '3rd inning': `${homeScore} - ${awayScore}`,
-  '4th inning': `${homeScore} - ${awayScore}`,
-  '5th inning': `${homeScore} - ${awayScore}`,
-  '6th inning': `${homeScore} - ${awayScore}`,
-  '7th inning': `${homeScore} - ${awayScore}`,
-  '8th inning': `${homeScore} - ${awayScore}`,
-  '9th inning': `${homeScore} - ${awayScore}`,
-  'Final Score': `${homeScore} - ${awayScore}`,
-}
-
-    for(let i = 0; i < numberOfInnings; i++){
-      theScore.homeScore = theScore.homeScore + inning();
-      theScore.awayScore = theScore.awayScore + inning();
-    }
-
-return theScore;
+  for(let i = 0; i < numberOfInnings; i++){
+    homeScore = homeScore + inning();
+    awayScore = awayScore + inning();
+    console.log(`${i + 1}th inning: ${homeScore} - ${awayScore}`);
+  }
+  return `Final Score: ${homeScore} - ${awayScore}`;
 }
 
 console.log(scoreboard(inning,9));
-
