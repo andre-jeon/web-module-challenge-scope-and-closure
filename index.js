@@ -76,11 +76,11 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
-
-  /*Code Here*/
-
+function finalScore(inning, numberOfInnings){
+  return `"Home": ${homeScore}, "Away": ${awayScore},`;
 }
+
+
 
 /* Task 4: 
 
