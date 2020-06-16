@@ -42,6 +42,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+being able to use a function inside of a function. 
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +64,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+in the return function because console.log is nested inside.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+the name would be the same but newRoll will change.
 c. What is the lexical scope of `newRoll`? 
+name
 
 ### Task 2c - Exit Ticket
 
